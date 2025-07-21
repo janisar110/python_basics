@@ -1,5 +1,6 @@
 #variables 
 
+
 name = "Ali" #string
 #print("01",name)
 name = "Janisar" #string
@@ -22,7 +23,6 @@ isOnline = True #boolean
 # print(memberId)
 
 # def scopeTesting(name):
-#     name = "janisar"
 #     print(name)
 
 # scopeTesting("Mallah")
