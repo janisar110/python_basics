@@ -16,9 +16,23 @@
 
 
 
-
-
-
-
-
 # # index 0 ==> apple
+
+
+# Start
+# End
+# increament
+
+# for x in range(2, 30, 3):
+#   print(x)
+
+
+# numbers = [2, 4, 6, 7, 9, 6,3,9,5,2,1,4,7]
+
+# for x in numbers:
+#   if x % 2 == 0:
+#     pass
+#     print("Even value",x)
+#   else:
+#     print("odd value",x)
+#     break
