@@ -37,72 +37,80 @@
 
 
 
+# thislist = ["apple", "banana", "cherry"]
+# copyList = thislist.copy()
+# copyList2 = thislist.copy()
+# thislist[1] = "blackcurrant"
+# print(thislist)
+# print(copyList)
 
-# list methods add, remove, update, read
 
-# Book library list
-library = []
 
-def show_menu():
-    print("\n===== Book Library Menu =====")
-    print("1. Add a Book")
-    print("2. Remove a Book")
-    print("3. Update Book Title")
-    print("4. View All Books")
-    print("5. Exit")
+# # list methods add, remove, update, read + search
 
-condition = True
+# # Book library list
+# library = []
 
-# inifinty loop
-while condition:
-    show_menu()
-    choice = input("Enter your choice (1-5): ")
+# def show_menu():
+#     print("\n===== Book Library Menu =====")
+#     print("1. Add a Book")
+#     print("2. Remove a Book")
+#     print("3. Update Book Title")
+#     print("4. View All Books")
+#     print("5. Exit")
 
-    # Add a book
-    if choice == "1":
-        book = input("Enter the name of the book to add: ")
-        library.append(book)
-        print(f"✅ '{book}' has been added to the library.")
+# condition = True
 
-    # Remove a book
-    elif choice == "2":
-        book = input("Enter the name of the book to remove: ")
-        if book in library:
-            library.remove(book)
-            print(f"🗑️ '{book}' has been removed.")
-        else:
-            print(f"⚠️'{book}' not found in the library.")
+# # inifinty loop
+# while condition:
+#     show_menu()
+#     choice = input("Enter your choice (1-5): ")
 
-    # Update book title
-    elif choice == "3":
-        old_name = input("Enter the current book name: ")
-        if old_name in library:
-            new_name = input("Enter the new book name: ")
-            index = library.index(old_name)
-            library[index] = new_name
-            print(f"🔄 '{old_name}' updated to '{new_name}'.")
-        else:
-            print(f"⚠️ '{old_name}' not found to update.")
+#     # Add a book
+#     if choice == "1":
+#         book = input("Enter the name of the book to add: ")
+#         library.append(book)
+#         print(f"✅ '{book}' has been added to the library.")
 
-    # view books
-    elif choice == "4":
-        if library:
-            print("\n📚 Books in Library:")
-            for idx, book in enumerate(library, start=1):
-                print(f"{idx}. {book}")
-            search = input("Search book here: ")
-            for idx, book in enumerate(library, start=1):
-                if search == book:
-                    print(f"'{search}' is founded at '{idx}'!") 
-                    break                
-        else:
-            print("📭 No books in the library.")
-    # Exit
-    elif choice == "5":
-        print("👋 Exiting the library. Goodbye!")
-        condition = False
-    else:
-        print("❌ Invalid choice. Please select from 1 to 5.")
+#     # Remove a book
+#     elif choice == "2":
+#         book = input("Enter the name of the book to remove: ")
+#         if book in library:
+#             library.remove(book)
+#             print(f"🗑️ '{book}' has been removed.")
+#         else:
+#             print(f"⚠️'{book}' not found in the library.")
+
+#     # Update book title
+#     elif choice == "3":
+#         old_name = input("Enter the current book name: ")
+#         if old_name in library:
+#             new_name = input("Enter the new book name: ")
+#             index = library.index(old_name)
+#             library[index] = new_name
+#             print(f"🔄 '{old_name}' updated to '{new_name}'.")
+#         else:
+#             print(f"⚠️ '{old_name}' not found to update.")
+
+#     # view books
+#     elif choice == "4":
+#         if library:
+#             print("\n📚 Books in Library:")
+#             for idx, book in enumerate(library, start=1):
+#                 print(f"{idx}. {book}")
+#             search = input("Search book here: ")
+#             for idx, book in enumerate(library, start=1):
+#                 if search == book:
+#                     print(f"'{search}' is founded at '{idx}'!") 
+#                     break                
+#         else:
+#             print("📭 No books in the library.")
+#     # Exit
+#     elif choice == "5":
+#         print("👋 Exiting the library. Goodbye!")
+#         condition = False
+#     else:
+#         print("❌ Invalid choice. Please select from 1 to 5.")
 
 
 
@@ -122,17 +130,57 @@ while condition:
 # print(users2)
 
 
+# packing & unpacking
+
+# packing create a tuple and asign values is called packing.
+
+# # unpacking example
+# fruits = ("apple", "banana", "cherry", "mango")
+
+# (fruit1, fruit2, fruit3) = fruits
+
+# print(fruit1)
+# print(fruit2)
+# print(fruit3)
 
 
 
+# # Dictionaries
+
+# carData = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964
+# }
+
+# print("This is car model", carData["model"])
+# x = carData.keys()
+# print("keys",x)
 
 
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+
+car["color"] = "white"
+
+print(x) #after the change
+
+x = car.items()
+print("test",x)
 
 
+car1 = {
+    "car1":{
 
-# thislist = ["apple", "banana", "cherry"]
-# copyList = thislist.copy()
-# copyList2 = thislist.copy()
-# thislist[1] = "blackcurrant"
-# print(thislist)
-# print(copyList)
+    },
+    "car2":{
+
+    }
+}
