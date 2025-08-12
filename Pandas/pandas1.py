@@ -34,7 +34,7 @@ df = pd.read_csv(StringIO(data))
 # total_revenue = df["Total"].sum()
 # print("\nTotal Revenue:", total_revenue)
 
-# # 4. find the minimum price from data show this order details
+# # 5. find the minimum price from data show this order details
 
 # # print("Price Column: ", df["Price"].max())
 # print("Winner: ", df.max())
