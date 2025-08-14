@@ -22,15 +22,17 @@ fd = pd.read_csv(StringIO(data))
 
 
 # # point 01
-# fd["Time Duration"] = pd.to_datetime(fd["PickupTime"]) - pd.to_datetime(fd["DropTime"])
+# fd["PickupTime"] = pd.to_datetime(fd["PickupTime"])
+# fd["DropTime"] = pd.to_datetime(fd["DropTime"])
+# fd["TripDurationMin"] = (fd["DropTime"] - fd["PickupTime"]).dt.total_seconds() / 60
 # print(fd)
 
-# point 02
-fd["PricePerKM"] = fd["DistanceKM"] / fd["Price"]
-print(fd)
+# # point 02
+# fd["PricePerKM"] = fd["DistanceKM"] / fd["Price"]
+# print(fd)
 
 # # Point 03
-# FilteredFd3 = fd.groupby("Product")["Quantity"].sum().idxmax()
-# print(FilteredFd3)
+# Filterefdd3 = fd["DistanceKM"] / 10
+# print(Filterefdd3)
 
 
